@@ -5,6 +5,7 @@ import addLanguageForm from '../forms/addLanguageForm';
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
     if (e.target.id.includes('delete-card')) {
+      // eslint-disable-next-line no-alert
       if (window.confirm('Confirm Delete?')) {
         const [, firebaseKey] = e.target.id.split('--');
 
@@ -14,13 +15,11 @@ const domEvents = (user) => {
       }
     }
 
-    // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A BOOK
-    if (e.target.id.includes('add-card-btn')) {
+    if (e.target.id.includes('#card-form')) {
       addLanguageForm();
     }
 
-    // TODO: CLICK EVENT EDITING/UPDATING A BOOK
-    if (e.target.id.includes('edit-card-btn')) {
+    if (e.target.id.includes('#edit-card-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleCard(firebaseKey).then((cardObj) => addLanguageForm(user.uid, cardObj));
     }

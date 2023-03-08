@@ -15,11 +15,11 @@ const showCards = (array) => {
       <div class="card">
         <div class="card-body" style="height: 180px;">
           <h5 class="card-title">${item.title}</h5>
-            <p class="card-text bold">${item.description}</p>
+            <p class="card-text bold">${item.definition}</p>
             <p class="card-text">${item.language}</p>
             <hr>
-            <button>edit</button>
-            <button>delete</button>
+            <i id="edit-card-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info">📝</i>
+            <i id="delete-card-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt">❌</i>
         </div>
       </div>`;
   });

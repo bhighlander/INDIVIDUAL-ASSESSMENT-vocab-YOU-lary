@@ -7,7 +7,7 @@ const navigationEvents = (user) => {
     .addEventListener('click', signOut);
 
   document.querySelector('#card-form').addEventListener('click', () => {
-    getCards(user).then(showCards);
+    getCards(user.uid).then(showCards);
   });
 };
 

@@ -10,7 +10,7 @@ const addLanguageForm = () => {
         <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
       </div>
       <div class="form-group">
-        <label for="image">Description</label>
+        <label for="image">Definition</label>
         <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
       </div>
       <div class="form-group" id="select-language">

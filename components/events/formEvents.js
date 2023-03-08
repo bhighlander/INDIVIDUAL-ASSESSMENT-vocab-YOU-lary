@@ -4,11 +4,11 @@ import { showCards } from '../../pages/cards';
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A BOOK
-    if (e.target.id.includes('submit-book')) {
+
+    if (e.target.id.includes('submit-card')) {
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
+        definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
         time_submitted: document.querySelector('#').value,
         uid: user.uid,
@@ -23,12 +23,11 @@ const formEvents = (user) => {
       });
     }
 
-    // TODO: CLICK EVENT FOR EDITING A BOOK
-    if (e.target.id.includes('update-book')) {
+    if (e.target.id.includes('update-card')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
+        definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
         time_submitted: document.querySelector('#').value,
         uid: user.uid,
