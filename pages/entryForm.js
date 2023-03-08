@@ -11,8 +11,8 @@ const addCardForm = (user, obj = {}) => {
         <input type="text" class="form-control" id="title" aria-describedby="cardTitle" placeholder="Enter Card Title" value="${obj.title || ''}" required>
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
-        <textarea class="form-control" placeholder="Card Description" id="description" style="height: 100px">${obj.description || ''}</textarea>
+        <label for="definition">Definition</label>
+        <textarea class="form-control" placeholder="Card Definition" id="definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div>
       <div class="form-group" id="select-language">
       </div>
