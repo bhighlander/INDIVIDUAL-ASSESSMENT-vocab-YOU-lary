@@ -5,7 +5,7 @@ import navbar from '../components/shared/navBar';
 import logoutButton from '../components/buttons/logoutButton';
 import navigationEvents from '../components/events/navigationEvents';
 import { showCards } from '../pages/cards';
-import { getCards } from '../api/languageData';
+import { getCards } from '../api/cardData';
 
 const startApp = (user) => {
   domBuilder(user);

@@ -1,4 +1,4 @@
-import { deleteCard, getCards, getSingleCard } from '../../api/languageData';
+import { deleteCard, getCards, getSingleCard } from '../../api/cardData';
 import { showCards } from '../../pages/cards';
 import addLanguageForm from '../forms/addLanguageForm';
 
@@ -15,11 +15,7 @@ const domEvents = (user) => {
       }
     }
 
-    if (e.target.id.includes('#card-form')) {
-      addLanguageForm();
-    }
-
-    if (e.target.id.includes('#edit-card-btn')) {
+    if (e.target.id.includes('edit-card-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleCard(firebaseKey).then((cardObj) => addLanguageForm(user.uid, cardObj));
     }
