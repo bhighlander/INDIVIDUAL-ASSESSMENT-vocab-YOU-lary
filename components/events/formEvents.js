@@ -1,4 +1,4 @@
-import { createCard, getCards, updateCard } from '../../api/languageData';
+import { createCard, getCards, updateCard } from '../../api/cardData';
 import { showCards } from '../../pages/cards';
 
 const formEvents = (user) => {
@@ -10,7 +10,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
-        time_submitted: document.querySelector('#').value,
+        time_submitted: Date.now(),
         uid: user.uid,
       };
 
@@ -29,7 +29,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
-        time_submitted: document.querySelector('#').value,
+        time_submitted: Date.now(),
         uid: user.uid,
         firebaseKey,
       };

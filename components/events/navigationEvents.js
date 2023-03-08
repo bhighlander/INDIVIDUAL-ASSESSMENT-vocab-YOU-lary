@@ -1,13 +1,12 @@
-import { getCards } from '../../api/languageData';
-import { showCards } from '../../pages/cards';
 import { signOut } from '../../utils/auth';
+import addLanguageForm from '../forms/addLanguageForm';
 
 const navigationEvents = (user) => {
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
   document.querySelector('#card-form').addEventListener('click', () => {
-    getCards(user.uid).then(showCards);
+    addLanguageForm(user.uid);
   });
 };
 
