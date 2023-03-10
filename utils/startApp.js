@@ -6,6 +6,7 @@ import logoutButton from '../components/buttons/logoutButton';
 import navigationEvents from '../components/events/navigationEvents';
 import { showCards } from '../pages/cards';
 import { getCards } from '../api/cardData';
+import filterBtn from '../components/buttons/filterButtons';
 
 const startApp = (user) => {
   domBuilder(user);
@@ -14,6 +15,7 @@ const startApp = (user) => {
   navbar();
   logoutButton();
   navigationEvents(user);
+  filterBtn();
 
   getCards(user.uid).then(showCards);
 };
