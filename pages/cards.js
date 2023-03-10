@@ -20,6 +20,9 @@ const showCards = (array) => {
             <hr>
             <i id="edit-card-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info">📝</i>
             <i id="delete-card-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt">❌</i>
+            <hr>
+            <p class="card-text">${item.time_submitted}</p>
+            <p class="card-text">${item.uid}</p>
         </div>
       </div>`;
   });
