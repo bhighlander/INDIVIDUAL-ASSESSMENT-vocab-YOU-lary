@@ -22,7 +22,6 @@ const showCards = (array) => {
             <i id="delete-card-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt">❌</i>
             <hr>
             <p class="card-text">${item.time_submitted}</p>
-            <p class="card-text">${item.uid}</p>
         </div>
       </div>`;
   });
