@@ -4,10 +4,10 @@
 Vocab-YOU-Lary is a web application that allows users to create a list of programming languages using their own account. The user can create a card with the language title and description, as well as edit and delete the cards. They can also filter their cards by language.
 
 ## Links
-- [Wireframes/Prototype](https://www.figma.com/file/ABC123/Vocab-YOU-Lary)
-- [Data Flowchart](https://drive.google.com/file/XYZ456/view?usp=sharing)
+- [Wireframes/Prototype](https://www.figma.com/file/gvL0wMCdfzemZfzfOmiDho/Individual-Assessment?node-id=0%3A1&t=AZeONVb1B0JrCnDf-0)
+- [Data Flowchart](https://lucid.app/lucidchart/e1987c72-e480-40ae-8bf4-ed88e6629254/edit?beaconFlowId=B9EB6102278480FC&invitationId=inv_4f6fa176-14e4-4201-881f-1aa3d5464845&page=0_0#)
 - [Deployed Project](https://vocab-you-lary.herokuapp.com/)
-- [Project Board](https://github.com/USERNAME/Vocab-YOU-Lary/projects/1)
+- [Project Board](https://github.com/users/bhighlander/projects/2/views/1)
 
 ## User and Problem
 The target users for this project are new programmers who want a place to store information to better understand different types of programming languages.
