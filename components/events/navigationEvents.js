@@ -15,8 +15,8 @@ const navigationEvents = (user) => {
     getCards(user.uid).then(showCards);
   });
 
-  document.querySelector('#filter-buttons').addEventListener('click', (event) => {
-    const language = event.target.id;
+  document.querySelector('#filter-buttons').addEventListener('click', (e) => {
+    const language = e.target.id;
     if (language === 'all') {
       getCards(user.uid).then(showCards);
     } else {
