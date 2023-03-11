@@ -17,11 +17,14 @@ const navigationEvents = (user) => {
 
   document.querySelector('#filter-buttons').addEventListener('click', (event) => {
     const language = event.target.id;
-
-    getCards(user.uid).then((cards) => {
-      const filteredCards = cards.filter((card) => card.language === language);
-      showCards(filteredCards);
-    });
+    if (language === 'all') {
+      getCards(user.uid).then(showCards);
+    } else {
+      getCards(user.uid).then((cards) => {
+        const filteredCards = cards.filter((card) => card.language === language);
+        showCards(filteredCards);
+      });
+    }
   });
 
   document.querySelector('#submit-btn').addEventListener('click', () => {
