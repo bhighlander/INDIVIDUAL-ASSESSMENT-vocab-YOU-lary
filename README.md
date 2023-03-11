@@ -18,7 +18,7 @@ The target users for this project are new programmers who want a place to store 
 - Filter cards on their account by language
 
 ## Screenshots
-[INSERT SCREENSHOTS HERE]
+
 
 ## Contributors
 - [Brandon Highland](https://github.com/bhighlander)
