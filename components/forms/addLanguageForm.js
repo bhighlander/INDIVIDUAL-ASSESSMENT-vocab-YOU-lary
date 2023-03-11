@@ -22,7 +22,7 @@ const addCardForm = (user, obj = {}) => {
       <label for="language">Language</label>
       <select class="form-control" id="language" required>
         <option value="">Select a language</option>
-        ${languageOptions}
+        ${obj.language || languageOptions}
       </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit Card</button>

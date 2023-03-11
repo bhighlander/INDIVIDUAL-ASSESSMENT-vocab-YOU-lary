@@ -23,6 +23,14 @@ const navigationEvents = (user) => {
       showCards(filteredCards);
     });
   });
+
+  document.querySelector('#submit-btn').addEventListener('click', () => {
+    const searchValue = document.querySelector('#search').value;
+
+    getCards(user.uid).then((data) => data.filter((index) => index.title.toLowerCase().includes(searchValue)
+      || index.definition.toLowerCase().includes(searchValue))).then(showCards);
+    document.querySelector('#search').value = '';
+  });
 };
 
 export default navigationEvents;
