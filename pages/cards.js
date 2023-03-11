@@ -1,3 +1,4 @@
+import filterBtn from '../components/buttons/filterButtons';
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDOM';
 
@@ -8,7 +9,7 @@ const emptyCards = () => {
 
 const showCards = (array) => {
   clearDom();
-
+  filterBtn();
   let domString = '';
   array.forEach((item) => {
     domString += `
