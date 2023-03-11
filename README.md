@@ -6,7 +6,6 @@ Vocab-YOU-Lary is a web application that allows users to create a list of progra
 ## Links
 - [Wireframes/Prototype](https://www.figma.com/file/gvL0wMCdfzemZfzfOmiDho/Individual-Assessment?node-id=0%3A1&t=AZeONVb1B0JrCnDf-0)
 - [Data Flowchart](https://lucid.app/lucidchart/e1987c72-e480-40ae-8bf4-ed88e6629254/edit?beaconFlowId=B9EB6102278480FC&invitationId=inv_4f6fa176-14e4-4201-881f-1aa3d5464845&page=0_0#)
-- [Deployed Project](https://vocab-you-lary.herokuapp.com/)
 - [Project Board](https://github.com/users/bhighlander/projects/2/views/1)
 
 ## User and Problem

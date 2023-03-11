@@ -10,7 +10,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
-        time_submitted: Date.now(),
+        time_submitted: new Date(),
         uid: user.uid,
       };
 
@@ -29,7 +29,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         language: document.querySelector('#language').value,
-        time_submitted: Date.now(),
+        time_submitted: new Date(),
         uid: user.uid,
         firebaseKey,
       };
